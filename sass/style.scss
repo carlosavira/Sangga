@@ -1,9 +1,23 @@
 @import "normalize";
-@import "skeleton";
-@import "css/bourbon/bourbon";
 
-h1 {
-  color:red;
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+
+
+.boxes{
+	@include clearfix;
+	@include outer-container;
 }
 
+.box{
+	background: tint(red,40%);
+	margin:20px;
+	@include size(100px);
+	float:left;
+}
+
+p{
+	font-family:$helvetica;
+}
 
